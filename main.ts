@@ -20,7 +20,7 @@ namespace ArexxMatrix {
     //% Heigth.defl=8 Width.defl=32
     export function createMatrix(Heigth: number = 8, Width: number = 32, mode: NeoPixelMode): void {
         if (!matrix) {
-            matrix = neopixel.create(DigitalPin.P0, Heigth * Width, mode)
+            matrix = neopixel.create(DigitalPin.P2, Heigth * Width, mode)
             ArexxMatrix.Brightness(32)
             MatrixHeigth = Heigth
             MatrixWidth = Width
